@@ -14,7 +14,7 @@ Also expand it to include a larger amount of images and tweets (I have locally s
 
 ## Screenshots
 
-![screenshot1](https://github.com/pm0u/TheForRealDonaldTrump/blob/master/readmephotos/Screenshot_20190130-111745.png&s=200)
+![screenshot1](https://github.com/pm0u/TheForRealDonaldTrump/blob/master/readmephotos/Screenshot_20190130-111745.png&v=4&s=200)
 
 ![screenshot2](https://github.com/pm0u/TheForRealDonaldTrump/blob/master/readmephotos/Screenshot_20190130-111859.png)
 
