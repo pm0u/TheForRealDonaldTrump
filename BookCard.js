@@ -27,7 +27,7 @@ class BookCard extends Component {
   render() {
     return (
       <View>
-      <Image style={{width: this.state.width, height:500 }} source={{uri:this.props.photo}} />
+      <Image style={{width: this.state.width, height:this.state.height }} source={{uri:this.props.photo}} />
       <Text>{this.props.post}</Text></View>
     )
   }
