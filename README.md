@@ -9,3 +9,5 @@ This was one of my first react native apps. what it does:
 
 The idea is to expand this to include other emotions or things like that -- such as angry, upset, pout, etc.. 
 Also expand it to include a larger amount of images and tweets (I have locally stored all tweets from 2009-2017...)
+
+Styling borrowed heavily from https://blog.expo.io/instagram-clone-using-firebase-react-native-expo-cc32f61c7bba (with some adaptations for android/not using Expo)
