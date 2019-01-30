@@ -35,7 +35,7 @@ export default class Post extends React.Component {
 
     return (
       <View>
-        <Header image={{ uri: photo }} name='TheForRealDonaldTrump' />
+        <Header image={ require('./trump_profile.jpg') } name='TheForRealDonaldTrump' />
           <Image style={{width:500, height:500 }} source={{uri:this.props.photo}} />
         <Metadata name='TheForRealDonaldTrump' description={post} />
       </View>
