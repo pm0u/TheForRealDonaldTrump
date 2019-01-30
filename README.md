@@ -17,8 +17,9 @@ This was one of my first react native apps. what it does:
 
 ## Screenshots
 
-<img display='inline-block' src="https://github.com/pm0u/TheForRealDonaldTrump/blob/master/readmephotos/Screenshot_20190130-111745.png" width="400">
-<img display='inline-block' src="https://github.com/pm0u/TheForRealDonaldTrump/blob/master/readmephotos/Screenshot_20190130-111859.png" width="400">
+<img display='inline-block' src="https://github.com/pm0u/TheForRealDonaldTrump/blob/master/readmephotos/Screenshot_20190130-120535.png" width="400">
+<img display='inline-block' src="https://github.com/pm0u/TheForRealDonaldTrump/blob/master/readmephotos/Screenshot_20190130-120603.png" width="400">
+<img display='inline-block' src="https://github.com/pm0u/TheForRealDonaldTrump/blob/master/readmephotos/Screenshot_20190130-120613.png" width="400">
 
 ## Sources
 
