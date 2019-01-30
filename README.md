@@ -14,9 +14,7 @@ Also expand it to include a larger amount of images and tweets (I have locally s
 
 ## Screenshots
 
-<img src="https://github.com/pm0u/TheForRealDonaldTrump/blob/master/readmephotos/Screenshot_20190130-111745.png" width="200">
-
-
-![screenshot2](https://github.com/pm0u/TheForRealDonaldTrump/blob/master/readmephotos/Screenshot_20190130-111859.png)
+<img src="https://github.com/pm0u/TheForRealDonaldTrump/blob/master/readmephotos/Screenshot_20190130-111745.png" width="400">
+<img src="https://github.com/pm0u/TheForRealDonaldTrump/blob/master/readmephotos/Screenshot_20190130-111859.png" width="400">
 
 Styling borrowed heavily from https://blog.expo.io/instagram-clone-using-firebase-react-native-expo-cc32f61c7bba (with some adaptations for android/not using Expo)
