@@ -9,8 +9,11 @@ This was one of my first react native apps. what it does:
 - randomly pairs these 2
 - displays them on a fake instagram feed with random likes and random post time
 
-The idea is to expand this to include other emotions or things like that -- such as angry, upset, pout, etc.. 
-Also expand it to include a larger amount of images and tweets (I have locally stored all tweets from 2009-2017...)
+
+## Future goals
+- expand this to include other emotions or things like that -- such as angry, upset, pout, etc.. (images and tweets) 
+- expand it to include a larger amount of tweets (I have locally stored all tweets from 2009-2017...)
+- expand to include more images (this will require paginating the google image search results)
 
 ## Screenshots
 
