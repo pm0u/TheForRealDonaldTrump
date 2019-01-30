@@ -8,7 +8,8 @@
  */
 
 import React, { Component } from 'react';
-import { Platform, StyleSheet, Text, View } from 'react-native';
+import { Platform, StyleSheet, Text, View, FlatList } from 'react-native';
+import BookCard from './BookCard'
 
 const confusedWordsUnfiltered = require('./test.js')
 const trump2k9 = require('./trump2009')
@@ -29,7 +30,8 @@ export default class App extends Component < Props > {
 
   state = {
     trumpTweets: [],
-    trumpPhotos: []
+    trumpPhotos: [],
+    trumpPosts: []
   }
 
   getTrumpPhotoURLS = async () => {
@@ -39,6 +41,32 @@ export default class App extends Component < Props > {
       return trumpPhotoItem.link
     })
     return trumpPhotoURLS
+  }
+
+  makePosts = () => {
+    const tweets = this.state.trumpTweets
+    const photos = this.state.trumpPhotos
+    const posts = []
+
+    this.state.trumpPhotos.forEach( nada => {
+      let randPhotoInd = Math.floor(Math.random()*photos.length)
+      let randTweetInd = Math.floor(Math.random()*tweets.length)
+
+      posts.push({photo: photos.splice(randPhotoInd,1)[0], post: tweets.splice(randTweetInd,1)[0].text})
+
+    })
+    return posts
+  }
+
+  setPosts = async () => {
+    const trumpPosts = this.makePosts()
+    console.log(trumpPosts)
+
+    this.setState(prevState => {
+      return ({
+        trumpPosts
+      })
+    })
   }
 
   setTrumpsData = async () => {
@@ -57,38 +85,21 @@ export default class App extends Component < Props > {
         trumpTweets,
         trumpPhotos
       })
-    })
+    }, this.setPosts)
   }
 
   componentDidMount = async () => {
     this.setTrumpsData()
   }
+
   render() {
     return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>Welcome to React Native!</Text>
-        <Text style={styles.instructions}>To get started, edit App.js</Text>
-        <Text style={styles.instructions}>{instructions}</Text>
+      <View style={{padding:10}}>
+      <FlatList data={this.state.trumpPosts}
+        renderItem={({item}) => <BookCard {...item} />}
+        keyExtractor={post => post.post.toString()}
+        />
       </View>
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
-});
