@@ -22,4 +22,5 @@ This was one of my first react native apps. what it does:
 
 ## Sources
 
-Styling influenced by https://blog.expo.io/instagram-clone-using-firebase-react-native-expo-cc32f61c7bba (with some adaptations for android/not using Expo)
+Styling influenced by https://github.com/EvanBacon/firebase-instagram
+(with some adaptations for android/not using Expo)
