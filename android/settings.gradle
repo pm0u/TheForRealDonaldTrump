@@ -1,0 +1,3 @@
+rootProject.name = 'TwitterGrama'
+
+include ':app'
