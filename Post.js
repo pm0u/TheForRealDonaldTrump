@@ -44,7 +44,7 @@ export default class Post extends React.Component {
 }
 
 const Metadata = ({ name, description }) => (
-  <View style={{paddingLeft:5}}>
+  <View style={{paddingLeft:5, paddingRight: 5}}>
     <IconBar />
     <Likes />
     <Text><Text style={styles.text}>{name} </Text><Text style={styles.subtitle}>{description}</Text></Text>
