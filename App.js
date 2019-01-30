@@ -10,6 +10,7 @@
 import React, { Component } from 'react';
 import { Platform, StyleSheet, Text, View, FlatList } from 'react-native';
 import BookCard from './BookCard'
+import Post from './Post'
 
 const confusedWordsUnfiltered = require('./test.js')
 const trump2k9 = require('./trump2009')
@@ -94,9 +95,9 @@ export default class App extends Component < Props > {
 
   render() {
     return (
-      <View style={{padding:10}}>
+      <View>
       <FlatList data={this.state.trumpPosts}
-        renderItem={({item}) => <BookCard {...item} />}
+        renderItem={({item}) => <Post {...item} />}
         keyExtractor={post => post.post.toString()}
         />
       </View>
